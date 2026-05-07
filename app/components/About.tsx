@@ -5,9 +5,9 @@ import { FaPeopleCarry } from 'react-icons/fa';
 
 export default function About() {
 	return (
-		<section id='about' className='about'>
+		<section id='who-we-are' className='about'>
 			<div className='max-width'>
-				<h2 className='h2'>About us</h2>
+				<h2 className='h2'>Who we are, and what we do.</h2>
 				<h3 className='h3'>Financial management services</h3>
 				<p>
 					We offer founders innovative financial insight, world class financial
@@ -26,7 +26,6 @@ export default function About() {
 					</div>
 					<div className='grid-item'>
 						<PiFileCloudBold color='red' size={50} />
-
 						<div>
 							<h3>Cloud Accounting</h3>
 							<p>

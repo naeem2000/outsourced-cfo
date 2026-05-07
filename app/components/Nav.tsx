@@ -24,10 +24,10 @@ export default function Nav() {
 				<Image src='/images/logo.svg' alt='logo' width={130} height={40} />
 				<ul>
 					<li>
-						<Link href='#hero'>About us</Link>
+						<Link href='#who-we-are'>Who we are</Link>
 					</li>
 					<li>
-						<Link href='#hero'>Focus areas</Link>
+						<Link href='#why-choose-us'>Why choose us?</Link>
 					</li>
 					<li>
 						<Link href='#hero'>Testimonials</Link>

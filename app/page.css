@@ -13,6 +13,7 @@
 
 .nav.scrolled {
   height: 50px;
+  background: rgb(129, 129, 129, 0.8);
 }
 
 .nav.scrolled .max-width img {
@@ -130,14 +131,20 @@
   margin-top: 20px;
 }
 
-.hero .max-width .hero-content button {
-  margin-top: 20px;
+.hero .max-width .hero-content .buttons {
   display: flex;
-  align-items: center;
+  margin-top: 20px;
   gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
+.hero .max-width .hero-content .buttons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+@media screen and (max-width: 1024px) {
   .hero .max-width .hero-content h1 {
     font-size: 35px;
   }
@@ -145,10 +152,25 @@
   .hero .max-width .hero-content p {
     font-size: 20px;
   }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .hero .max-width .hero-content .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero .max-width .hero-content .buttons button {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .about {
-  padding: 40px 0px;
+  padding-top: 80px;
 }
 
 .about .max-width>p {
@@ -160,7 +182,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .about-grid .grid-item {
@@ -181,13 +203,14 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .about {
-    padding: 20px 0px;
+    padding-top: 40px;
   }
 
   .about-grid {
     grid-template-columns: 100%;
+    margin-top: 20px;
   }
 
   .about-grid .grid-item {
@@ -197,5 +220,59 @@
 
   .about .max-width>p {
     font-size: 18px;
+  }
+}
+
+.focus-areas {
+  padding-top: 80px;
+}
+
+.focus-areas .max-width>p {
+  font-size: 23px;
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
+.focus-areas .areas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  margin-top: 40px;
+  grid-gap: 18px;
+}
+
+.focus-areas .areas .area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f3f3f3;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: all ease .3s;
+}
+
+.focus-areas .areas .area:hover {
+  border-color: #d3d3d3;
+}
+
+@media screen and (max-width: 1024px) {
+  .focus-areas .max-width>p {
+    font-size: 18px;
+  }
+
+  .focus-areas .areas {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .focus-areas {
+    padding-top: 40px;
+  }
+
+  .focus-areas .areas {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
