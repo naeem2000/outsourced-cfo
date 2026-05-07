@@ -27,7 +27,7 @@ export default function Nav() {
 						<Link href='#hero'>About us</Link>
 					</li>
 					<li>
-						<Link href='#hero'>Services</Link>
+						<Link href='#hero'>Focus areas</Link>
 					</li>
 					<li>
 						<Link href='#hero'>Testimonials</Link>
@@ -71,7 +71,7 @@ export default function Nav() {
 					</motion.div>
 				)}
 			</AnimatePresence>
-			{scrolled && <div>scroll to top</div>}
+			{/* {scrolled && <div>scroll to top</div>} */}
 		</div>
 	);
 }

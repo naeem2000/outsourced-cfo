@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { FaArrowCircleDown } from 'react-icons/fa';
+
 export default function Hero() {
 	return (
 		<section className='hero'>
@@ -10,7 +13,11 @@ export default function Hero() {
 						Scaling up is complex. Simplify it with CFO, cloud accounting,
 						talent solutions and automation expertise.
 					</p>
-					<button className='button-red'>Get Started</button>
+					<Link href='#about'>
+						<button className='button-red'>
+							Learn more <FaArrowCircleDown />
+						</button>
+					</Link>
 				</div>
 			</div>
 		</section>
