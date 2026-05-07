@@ -9,7 +9,7 @@ export default function About() {
 			<div className='max-width'>
 				<h2 className='h2'>Who we are, and what we do.</h2>
 				<h3 className='h3'>Financial management services</h3>
-				<p>
+				<p className='p'>
 					We offer founders innovative financial insight, world class financial
 					technology and peace of mind.
 				</p>

@@ -6,7 +6,7 @@ export default function FocusAreas() {
 			<div className='max-width'>
 				<h2 className='h2'>Why choose us?</h2>
 				<h3 className='h3'>Specialized industries</h3>
-				<p>
+				<p className='p'>
 					With many decades worth of combined experience, our team is able to
 					assist companies in any industry or phase of development. We do
 					however have in-depth experience with high-growth companies in the

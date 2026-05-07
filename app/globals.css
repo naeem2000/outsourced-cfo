@@ -59,6 +59,12 @@ button.button-red:hover {
   margin-top: 10px;
 }
 
+.p {
+  font-size: 23px;
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
 @media screen and (max-width: 1024px) {
   .h2 {
     font-size: 20px;
@@ -67,4 +73,12 @@ button.button-red:hover {
   .h3 {
     font-size: 30px;
   }
+
+  .p {
+    font-size: 18px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: red !important;
 }

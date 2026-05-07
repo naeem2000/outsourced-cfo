@@ -152,8 +152,6 @@
   .hero .max-width .hero-content p {
     font-size: 20px;
   }
-
-
 }
 
 @media screen and (max-width: 480px) {
@@ -171,11 +169,6 @@
 
 .about {
   padding-top: 80px;
-}
-
-.about .max-width>p {
-  font-size: 23px;
-  margin-top: 10px;
 }
 
 .about-grid {
@@ -217,20 +210,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .about .max-width>p {
-    font-size: 18px;
-  }
 }
 
 .focus-areas {
   padding-top: 80px;
-}
-
-.focus-areas .max-width>p {
-  font-size: 23px;
-  margin-top: 10px;
-  max-width: 1000px;
 }
 
 .focus-areas .areas {
@@ -256,10 +239,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .focus-areas .max-width>p {
-    font-size: 18px;
-  }
-
   .focus-areas .areas {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
@@ -274,5 +253,58 @@
 
   .focus-areas .areas {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.testimonials {
+  padding-top: 80px;
+}
+
+.testimonials .max-width .slides {
+  margin-top: 40px;
+  cursor: grab;
+  padding-bottom: 50px;
+}
+
+.testimonials .max-width .slides .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: red;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonials .max-width .slides .slide img {
+  aspect-ratio: 1/1;
+  border-radius: 60px;
+}
+
+.testimonials .max-width .slides .slide .name {
+  font-size: 20px;
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+.testimonials .max-width .slides .slide .occupation {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.testimonials .max-width .slides .slide .review {
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding-top: 40px;
   }
 }

@@ -12,7 +12,7 @@ export default function Nav() {
 
 	React.useEffect(() => {
 		const handleScroll = () => {
-			setScrolled(window.scrollY > 10);
+			setScrolled(window.scrollY > 100);
 		};
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
