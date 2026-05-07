@@ -12,7 +12,6 @@
 }
 
 .nav.scrolled {
-  background: rgba(255, 255, 255, 0.9);
   height: 50px;
 }
 
@@ -86,6 +85,11 @@
     display: block;
     z-index: 21;
   }
+
+  .nav.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    height: 50px;
+  }
 }
 
 .hero {
@@ -137,5 +141,20 @@
 
   .hero .max-width .hero-content p {
     font-size: 20px;
+  }
+}
+
+.about {
+  padding: 40px 0px;
+}
+
+.about .max-width>p {
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 20px 0px;
   }
 }

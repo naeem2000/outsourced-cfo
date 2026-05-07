@@ -30,7 +30,7 @@ export default function Nav() {
 						<Link href='#hero'>Services</Link>
 					</li>
 					<li>
-						<Link href='#hero'>Reviews</Link>
+						<Link href='#hero'>Testimonials</Link>
 					</li>
 					<li>
 						<Link href='#hero'>Contact</Link>

@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<div className='hero'>
+		<section className='hero'>
 			<div className='max-width'>
 				<div className='hero-content'>
 					<h1>
@@ -13,6 +13,6 @@ export default function Hero() {
 					<button className='button-red'>Get Started</button>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

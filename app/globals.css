@@ -40,3 +40,14 @@ button {
 button.button-red {
   background: red;
 }
+
+.h2 {
+  color: red;
+  font-size: 30px;
+}
+
+.h3 {
+  color: black;
+  font-size: 40px;
+  margin-top: 10px;
+}
