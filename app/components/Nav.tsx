@@ -5,7 +5,14 @@ import { AnimatePresence, motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useCallback } from 'react';
-import { FaArrowCircleUp } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
+import {
+	FaArrowCircleUp,
+	FaFacebookSquare,
+	FaLinkedin,
+	FaYoutube,
+} from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Nav() {
 	const [isOpen, setOpen] = React.useState(false);
@@ -81,6 +88,16 @@ export default function Nav() {
 								</Link>
 							</li>
 						</ul>
+						<div className='socials'>
+							<p className='socials-head'>Follow us:</p>
+							<div className='socials-row'>
+								<FaXTwitter color='red' size={25} />
+								<FaFacebookSquare color='red' size={25} />
+								<FaLinkedin color='red' size={25} />
+								<FaYoutube color='red' size={33} />
+								<AiFillInstagram color='red' size={30} />
+							</div>
+						</div>
 					</motion.div>
 				)}
 			</AnimatePresence>
