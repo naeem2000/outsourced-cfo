@@ -100,6 +100,27 @@ button.button-red:hover {
 }
 
 .css-msbelq-MuiInputBase-input-MuiOutlinedInput-input {
-
   font-size: 14px !important;
+}
+
+.scroll-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 60px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-top {
+    padding: 7px;
+  }
 }
