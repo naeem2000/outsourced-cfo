@@ -86,3 +86,20 @@ button.button-red:hover {
 .swiper-pagination-bullet-active {
   background: red !important;
 }
+
+.css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 14px !important;
+}
+
+.css-msbelq-MuiInputBase-input-MuiOutlinedInput-input {
+
+  font-size: 14px !important;
+}
