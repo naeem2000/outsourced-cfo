@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useCallback } from 'react';
+import { FaArrowCircleUp } from 'react-icons/fa';
 
 export default function Nav() {
 	const [isOpen, setOpen] = React.useState(false);
@@ -83,7 +84,11 @@ export default function Nav() {
 					</motion.div>
 				)}
 			</AnimatePresence>
-			{/* {scrolled && <div>scroll to top</div>} */}
+			{scrolled && (
+				<Link href='#body' className='scroll-top'>
+					<FaArrowCircleUp size={30} />
+				</Link>
+			)}
 		</div>
 	);
 }
