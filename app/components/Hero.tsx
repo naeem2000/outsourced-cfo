@@ -15,7 +15,7 @@ export default function Hero() {
 						talent solutions and automation expertise.
 					</p>
 					<div className='buttons'>
-						<Link href='#about'>
+						<Link href='#who-we-are'>
 							<button className='button-red'>
 								Learn more <FaArrowCircleDown />
 							</button>

@@ -11,7 +11,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 
 export default function Contact() {
 	return (
-		<section className='contact'>
+		<section id='contact' className='contact'>
 			<div className='max-width'>
 				<div className='contact-body'>
 					<div className='left'>
