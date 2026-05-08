@@ -8,7 +8,7 @@ import 'swiper/css';
 
 export default function Testimonials() {
 	return (
-		<section className='testimonials'>
+		<section id='testimonials' className='testimonials'>
 			<div className='max-width'>
 				<h2 className='h2'>Testimonials</h2>
 				<h3 className='h3'>Entrepreneurs change the world.</h3>
@@ -27,7 +27,7 @@ export default function Testimonials() {
 					draggable
 					breakpoints={{
 						1024: {
-							slidesPerView: 2,
+							slidesPerView: 3,
 						},
 					}}
 					className='slides'
@@ -118,6 +118,7 @@ export default function Testimonials() {
 					</SwiperSlide>
 				</Swiper>
 			</div>
+			<div className='mid-bg' />
 		</section>
 	);
 }

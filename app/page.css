@@ -145,6 +145,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .hero {
+    background-attachment: unset;
+  }
+
   .hero .max-width .hero-content h1 {
     font-size: 35px;
   }
@@ -274,6 +278,7 @@
   background: red;
   padding: 20px;
   border-radius: 10px;
+  min-height: 320px;
 }
 
 .testimonials .max-width .slides .slide img {
@@ -297,14 +302,210 @@
 }
 
 .testimonials .max-width .slides .slide .review {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 15px;
   text-align: center;
   color: white;
 }
 
+.testimonials .mid-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), #0000004d),
+    url('/backgrounds/focus-areas-bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+
 @media screen and (max-width: 768px) {
   .testimonials {
     padding-top: 40px;
+  }
+
+  .testimonials .max-width .slides .slide {
+    min-height: 350px;
+  }
+
+  .testimonials .mid-bg {
+    background-attachment: unset;
+  }
+}
+
+.contact {
+  padding-top: 80px;
+}
+
+.contact .max-width .contact-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact .max-width .contact-body .right {
+  background: rgb(255, 114, 114);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .max-width .contact-body .right button {
+  margin-right: auto;
+}
+
+.contact .max-width .contact-body .left .links {
+  margin-top: 20px;
+}
+
+.contact .max-width .contact-body .left .links div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact .max-width .contact-body .left .links .cities {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact .max-width .contact-body .left .links .cities div .city {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact .max-width .contact-body .left .links .cities div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact .max-width .contact-body .left .links .cities div .text-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.contact .max-width .contact-body .left .links .cities div .text-icon p {
+  max-width: 300px;
+}
+
+.contact .max-width .contact-body .left .links .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.contact .max-width .contact-body .left .links .socials .socials-head {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact .max-width .contact-body .left .links .socials .socials-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact .max-width .contact-body .left .links .socials .socials-row svg {
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.contact .max-width .contact-body .left .links .socials .socials-row svg:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding-top: 40px;
+  }
+
+  .contact .max-width .contact-body {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact .max-width .contact-body .right {
+    width: 100%;
+  }
+
+  .contact .max-width .contact-body .right button {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .max-width .contact-body .left .links .cities {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact .max-width .contact-body .left .links .cities div .text-icon p {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+footer {
+  background: #303133;
+  margin-top: 80px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer .max-width .footer-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .max-width .footer-body .left p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: white;
+}
+
+footer .max-width .footer-body .right {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  footer .max-width .footer-body .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .max-width .footer-body .right {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer .max-width .footer-body .left p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  footer .max-width .footer-body {
+    flex-direction: column;
   }
 }

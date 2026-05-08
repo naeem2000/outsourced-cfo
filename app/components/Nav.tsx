@@ -30,10 +30,10 @@ export default function Nav() {
 						<Link href='#why-choose-us'>Why choose us?</Link>
 					</li>
 					<li>
-						<Link href='#hero'>Testimonials</Link>
+						<Link href='#testimonials'>Testimonials</Link>
 					</li>
 					<li>
-						<Link href='#hero'>Contact</Link>
+						<Link href='#contact'>Contact</Link>
 					</li>
 				</ul>
 				<div className='burger'>
@@ -56,16 +56,16 @@ export default function Nav() {
 					>
 						<ul>
 							<li>
-								<Link href='#hero'>About</Link>
+								<Link href='#who-we-are'>Who we are</Link>
 							</li>
 							<li>
-								<Link href='#hero'>Services</Link>
+								<Link href='#why-choose-us'>Why choose us?</Link>
 							</li>
 							<li>
-								<Link href='#hero'>Reviews</Link>
+								<Link href='#testimonials'>Testimonials</Link>
 							</li>
 							<li>
-								<Link href='#hero'>Contact</Link>
+								<Link href='#contact'>Contact</Link>
 							</li>
 						</ul>
 					</motion.div>
