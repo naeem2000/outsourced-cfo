@@ -4,7 +4,7 @@ import { Fade as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 export default function Nav() {
 	const [isOpen, setOpen] = React.useState(false);
@@ -16,6 +16,10 @@ export default function Nav() {
 		};
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	const handleClose = useCallback(() => {
+		setOpen(false);
 	}, []);
 
 	return (
@@ -56,16 +60,24 @@ export default function Nav() {
 					>
 						<ul>
 							<li>
-								<Link href='#who-we-are'>Who we are</Link>
+								<Link onClick={handleClose} href='#who-we-are'>
+									Who we are
+								</Link>
 							</li>
 							<li>
-								<Link href='#why-choose-us'>Why choose us?</Link>
+								<Link onClick={handleClose} href='#why-choose-us'>
+									Why choose us?
+								</Link>
 							</li>
 							<li>
-								<Link href='#testimonials'>Testimonials</Link>
+								<Link onClick={handleClose} href='#testimonials'>
+									Testimonials
+								</Link>
 							</li>
 							<li>
-								<Link href='#contact'>Contact</Link>
+								<Link onClick={handleClose} href='#contact'>
+									Contact
+								</Link>
 							</li>
 						</ul>
 					</motion.div>
